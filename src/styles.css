@@ -1,0 +1,39 @@
+body {
+    background: #fff;
+    font-family: "Roboto", sans-serif;
+}
+
+main,
+form {
+    padding: 1em 1em 0 0;
+}
+
+a {
+    color: #885df1;
+}
+
+.weather-app {
+    background: #e0e6ffe9;
+    max-width: 600px;
+    margin: 15% auto;
+    padding: 2em;
+    border-radius: 2em;
+    box-shadow: 0 0.5em 0.5em #41326414;
+}
+
+.weather-app:hover {
+    background-color: #c3ceffab;
+}
+
+.footer {
+    font-size: 12px;
+    font-style: italic;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.9em;
+    font-style: italic;
+    padding-top: 3em;
+    color: rgba(39, 33, 66, 0.4);
+}
