@@ -13,15 +13,15 @@
     <body>
         <div class="weather-app">
             <header>
-                <form>
-                    <input class="search-input" type="search" placeholder="Enter a city" required />
+                <form id="search-form">
+                    <input class="search-input" id="search-input" type="search" placeholder="Enter a city" required />
                     <input class="search-button" type="submit" value="Search"></input>
                 </form>
             </header>
             <main>
                 <div class="current-weather">
                     <div class="city-container">
-                        <h1 class="current-city">Melbourne</h1>
+                        <h1 class="current-city" id="city">Melbourne</h1>
                         <p class="current-details">
                             <span>, moderate rain</span>
                             <br />
@@ -46,6 +46,6 @@
                 </p>
             </footer>
         </div>
-        <script src="src/script.js"></script>
+        <script src="src/app.js"></script>
     </body>
 </html>
