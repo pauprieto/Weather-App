@@ -56,6 +56,11 @@ a {
     background-color: #ed5bea91;
 }
 
+.current-weather {
+    display: flex;
+    justify-content: space-between;
+}
+
 .current-temperature {
     font-size: 48px;
     color: #393939;
@@ -66,6 +71,13 @@ a {
     color: #ec4275db;
     font-weight: 900;
     margin: 0;
+}
+
+.current-details {
+    color: #27214266;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
 }
 
 .current-details strong {
