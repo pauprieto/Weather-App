@@ -56,7 +56,30 @@ a {
     background-color: #ed5bea91;
 }
 
-footer {
+.current-temperature {
+    font-size: 48px;
+    color: #393939;
+}
+
+.current-temperature-icon {
+    position: relative;
+    top: -8px;
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+.current-temperature-value {
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.current-temperature-unit {
+    font-size: 28px;
+    position: relative;
+    top: -38px;
+}
+
+.footer {
     text-align: center;
     font-size: 0.9em;
     font-style: italic;
