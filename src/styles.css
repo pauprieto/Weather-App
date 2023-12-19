@@ -61,6 +61,17 @@ a {
     color: #393939;
 }
 
+.current-city {
+    font-size: 38px;
+    color: #ec4275db;
+    font-weight: 900;
+    margin: 0;
+}
+
+.current-details strong {
+    color: #f15483db;
+}
+
 .current-temperature-icon {
     position: relative;
     top: -8px;
