@@ -1,6 +1,6 @@
 body {
     background: #fff;
-    font-family: "Roboto", sans-serif;
+    font-family: "Quicksand", sans-serif;
 }
 
 main,
@@ -32,8 +32,8 @@ a {
     color: #1e1a33ba;
     font-size: 1.1em;
     padding: 1.1em;
-    width: 80%;
-    border-radius: 2em;
+    width: 70%;
+    border-radius: 1.5em;
 }
 
 .search-button {
@@ -44,7 +44,7 @@ a {
     color: white;
     border: none;
     padding: 1.3em;
-    line-height: 1.1;
+    line-height: 1;
     border-radius: 3em;
 }
 
@@ -67,10 +67,11 @@ a {
 }
 
 .current-city {
-    font-size: 38px;
+    font-family: "Roboto Mono", monospace;
     color: #ec4275db;
+    font-size: 40px;
     font-weight: 900;
-    margin: 0;
+    margin-left: 0.1em;
 }
 
 .current-details {
@@ -78,6 +79,7 @@ a {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
+    margin-left: 0.1em;
 }
 
 .current-details strong {
