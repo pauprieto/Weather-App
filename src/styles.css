@@ -25,11 +25,17 @@ a {
     background-color: #e4f0fa;
 }
 
+::placeholder {
+    font-style: italic;
+    font-size: 1em;
+    color: #27214266;
+}
+
 .search-input {
     outline: none;
     background-color: #f9f7fe;
     border: none;
-    color: #1e1a33ba;
+    color: #393939;
     font-size: 1.1em;
     padding: 1.1em;
     width: 70%;
