@@ -13,21 +13,47 @@ a {
 }
 
 .weather-app {
-    background: #e0e6ffe9;
+    background: #eff2fffa;
     max-width: 600px;
-    margin: 15% auto;
+    margin: 10% auto;
     padding: 2em;
     border-radius: 2em;
     box-shadow: 0 0.5em 0.5em #41326414;
 }
 
 .weather-app:hover {
-    background-color: #c3ceffab;
+    background-color: #e4f0fa;
 }
 
-.footer {
-    font-size: 12px;
-    font-style: italic;
+.search-input {
+    outline: none;
+    background-color: #f9f7fe;
+    border: none;
+    color: #1e1a33ba;
+    font-size: 1.1em;
+    padding: 1.1em;
+    width: 80%;
+    border-radius: 2em;
+}
+
+.search-button {
+    margin-left: 1em;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: #9875f1;
+    color: white;
+    border: none;
+    padding: 1.3em;
+    line-height: 1.1;
+    border-radius: 3em;
+}
+
+.search-button:hover {
+    background-color: #845bed8c;
+}
+
+.search-button:active {
+    background-color: #ed5bea91;
 }
 
 footer {
@@ -35,5 +61,5 @@ footer {
     font-size: 0.9em;
     font-style: italic;
     padding-top: 3em;
-    color: rgba(39, 33, 66, 0.4);
+    color: #27214266;
 }
