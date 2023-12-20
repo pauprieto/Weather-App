@@ -4,9 +4,12 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Roboto+Mono&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Roboto+Mono&display=swap"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="src/styles.css" />
         <title>Weather App</title>
     </head>
@@ -14,8 +17,14 @@
         <div class="weather-app">
             <header>
                 <form id="search-form">
-                    <input class="search-input" id="search-input" type="search" placeholder="Enter a city" required />
-                    <input class="search-button" type="submit" value="Search"></input>
+                    <input
+                        class="search-input"
+                        id="search-input"
+                        type="search"
+                        placeholder="Enter a city"
+                        required
+                    />
+                    <input class="search-button" type="submit" value="Search" />
                 </form>
             </header>
             <main>
@@ -23,26 +32,47 @@
                     <div class="city-container">
                         <h1 class="current-city" id="city"></h1>
                         <p class="current-details">
-                            <span>, moderate rain</span>
+                            <span id="location-date"></span>,
+                            <span id="location-description"></span>
                             <br />
-                            Humidity: <strong>87%</strong>, Wind:
-                            <strong>7.2km/h</strong>
+                            Humidity:
+                            <strong id="location-humidity"></strong>, Wind:
+                            <strong id="location-wind"></strong>
                         </p>
                     </div>
                     <div class="current-temperature">
-                        <span class="current-temperature-icon" id="temp-icon">☀️</span>
-                        <span class="current-temperature-value" id="temp-value"></span>
-                        <span class="current-temperature-unit" id="temp-unit">°C</span>
+                        <span
+                            class="current-temperature-icon"
+                            id="temp-icon"
+                        ></span>
+                        <span
+                            class="current-temperature-value"
+                            id="temp-value"
+                        ></span>
+                        <span class="current-temperature-unit" id="temp-unit"
+                            >°C</span
+                        >
                     </div>
                 </div>
             </main>
             <footer class="footer">
-                <p>This project was coded by
-                    <a href="https://github.com/pauprieto" target="_blank">Paula Prieto</a>
+                <p>
+                    This project was coded by
+                    <a href="https://github.com/pauprieto" target="_blank"
+                        >Paula Prieto</a
+                    >
                     and is
-                    <a href="https://github.com/pauprieto/Weather-App" target="_blank">on Github</a>
+                    <a
+                        href="https://github.com/pauprieto/Weather-App"
+                        target="_blank"
+                        >on Github</a
+                    >
                     and
-                    <a href="https://pau-weather-app.netlify.app" target="_blank">hosted on Netlify</a>
+                    <a
+                        href="https://pau-weather-app.netlify.app"
+                        target="_blank"
+                        >hosted on Netlify</a
+                    >
                 </p>
             </footer>
         </div>
