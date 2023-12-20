@@ -1,3 +1,4 @@
+// Function to parse the formatted date
 function formatDate(date) {
     let day = date.getDay();
     let hours = date.getHours();
@@ -25,6 +26,7 @@ function displayWeatherData(response) {
     let humidityElement = document.querySelector("#location-humidity");
     let windElement = document.querySelector("#location-wind");
     let dateElement = document.querySelector("#location-date");
+    let iconElement = document.querySelector("#temp-icon");
 
     let city = response.data.city;
     let temperature = Math.round(response.data.temperature.current);
@@ -32,6 +34,9 @@ function displayWeatherData(response) {
     let humidity = response.data.temperature.humidity;
     let wind = response.data.wind.speed;
     let date = new Date(response.data.time * 1000);
+    let icon = `<img
+    src="${response.data.condition.icon_url}"
+    class="current-temperature-icon"/>`;
 
     cityElement.innerHTML = `${city}`;
     temperatureElement.innerHTML = `${temperature}`;
@@ -39,8 +44,7 @@ function displayWeatherData(response) {
     humidityElement.innerHTML = `${humidity}%`;
     windElement.innerHTML = `${wind}km/h`;
     dateElement.innerHTML = formatDate(date);
-
-    //getImage(imageUrl.value, response);
+    iconElement.innerHTML = `${icon}`;
 }
 
 // function using Axios API to get the city weather data
