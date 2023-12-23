@@ -3,9 +3,8 @@ body {
     font-family: "Quicksand", sans-serif;
 }
 
-main,
 form {
-    padding: 1em 1em 0 0;
+    margin: 1em 0.1em;
 }
 
 a {
@@ -64,15 +63,8 @@ a {
 
 .current-weather {
     display: flex;
-    justify-content: space-between;
-}
-
-.current-temperature {
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 48px;
-    color: #393939;
-    margin-top: 0.6em;
+    justify-content: space-around;
+    margin: 1em;
 }
 
 .current-city {
@@ -80,7 +72,6 @@ a {
     color: #ec4275db;
     font-size: 40px;
     font-weight: 900;
-    margin-left: 0.1em;
 }
 
 .current-details {
@@ -88,16 +79,22 @@ a {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    margin-left: 0.3em;
 }
 
 .current-details strong {
     color: #f15483db;
 }
 
+.current-temperature {
+    display: flex;
+    justify-content: space-between;
+    font-size: 48px;
+    color: #393939;
+    margin-top: 0.3em;
+}
+
 .current-temperature-icon {
-    position: relative;
-    width: 100%;
+    width: 2em;
 }
 
 .current-temperature-value {
@@ -106,12 +103,14 @@ a {
 }
 
 .current-temperature-unit {
-    position: relative;
+    margin-top: 0.2em;
 }
 
+/* Weekly Forecast */
 #forecast {
     display: flex;
     justify-content: space-around;
+    margin: 2em 1em;
 }
 
 .forecast-weather {
@@ -126,7 +125,7 @@ a {
 }
 
 .forecast-temperature-icon {
-    width: 60%;
+    width: 3em;
     margin-bottom: -5px;
 }
 
