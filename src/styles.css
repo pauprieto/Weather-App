@@ -109,8 +109,12 @@ a {
     position: relative;
 }
 
+#forecast {
+    display: flex;
+    justify-content: space-around;
+}
+
 .forecast-weather {
-    display: inline-block;
     text-align: center;
     color: #393939;
 }
