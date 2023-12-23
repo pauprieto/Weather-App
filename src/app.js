@@ -68,3 +68,30 @@ let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearch);
 
 getCity("Melbourne");
+
+function displayForecast() {
+    let forecast = document.querySelector("#forecast");
+
+    let days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    let forecastHtml = "";
+
+    days.forEach(function (day) {
+        forecastHtml += `
+            <div class="forecast-weather">
+                <div class="forecast-day">${day}</div>
+                <img
+                    src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png"
+                    class="forecast-temperature-icon"
+                    />
+                    <div class="forecast-temperatures">
+                        <span class="forecast-temp-max"> 18º </span>
+                        <span class="forecast-temp-min"> 12º </span>
+                    </div>
+            </div>
+        `;
+    });
+
+    forecast.innerHTML = forecastHtml;
+}
+
+displayForecast();
