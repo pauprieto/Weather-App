@@ -15,9 +15,9 @@ function formatDate(date) {
     let days = [
         "Sunday",
         "Monday",
-        "Tueday",
-        "Wedday",
-        "Thuday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
         "Friday",
         "Saturday",
     ];
@@ -86,10 +86,20 @@ function formatDay(timestamp) {
     return days[date.getDay()];
 }
 
+// Function to get the weekly weather forecast from API
+function getForecast(city) {
+    let apiKey = "2b0dc590cd47ao3bt2dcefd407454554";
+    let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+
+    axios.get(apiUrl).then(displayForecastData);
+}
+
+// Function that displays the forecast data
 function displayForecastData(response) {
     let forecastHtml = "";
 
     response.data.daily.forEach(function (day, index) {
+        // Compare forecast day with the current day and skip it
         if (index < 6) {
             forecastHtml += `
             <div class="forecast-weather">
@@ -114,12 +124,4 @@ function displayForecastData(response) {
     });
 
     forecast.innerHTML = forecastHtml;
-}
-
-// Function to display the weekly weather forecast
-function getForecast(city) {
-    let apiKey = "2b0dc590cd47ao3bt2dcefd407454554";
-    let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
-
-    axios.get(apiUrl).then(displayForecastData);
 }
